@@ -1,9 +1,9 @@
-﻿@model Movie 
+﻿@model Movies 
 
 <!--include a confirmation page to ensure it's working-->
 <h2>Confirmation</h2>
 
-<p>Category: @Model.Category</p>
+<p>Category: @Model.Category.Category</p>
 <p>Title: @Model.Title</p>
 <p>Year: @Model.Year</p>
 <p>Director: @Model.Director</p>
@@ -11,3 +11,9 @@
 <p>Edited: @Model.Edited</p>
 <p>Lent To: @Model.LentTo</p>
 <p>Notes: @Model.Notes</p>
+
+<div>
+    <a asp-controller="Home" asp-action="EnterMovies">Enter another Movie</a>
+    <br />
+    <a asp-controller="Home" asp-action="MovieList">View Movie List</a>
+</div>

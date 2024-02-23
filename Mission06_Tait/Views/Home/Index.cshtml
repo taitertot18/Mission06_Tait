@@ -1,9 +1,14 @@
 ﻿@{
     ViewData["Title"] = "The Joel Hilton Film Collection";
 }
+@model Mission06_Tait.Models.Movies
 
 <!--Create the Welcome index page-->
 <div class="text-center">
     <h1 class="display-4">Welcome to the Joel Hilton Film Collection</h1>
     <img src="~/img/JoelHiltonHeadshot.jpg" alt="Joel Hilton Headshot">
+</div>
+
+<div>
+    <a asp-controller="Home" asp-action="MovieList">View Movie List</a>
 </div>
